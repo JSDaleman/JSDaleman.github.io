@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hola mundo 👋
+
+Este repositorio es la pagina web de mi perfil para github
 
 <!--
 **JSDaleman/JSDaleman** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
