@@ -21,6 +21,26 @@ const posts = defineCollection({
   }),
 });
 
+const publications = defineCollection({
+  loader: glob({
+    pattern: "**/*.md",
+    base: "src/contents/publications",
+  }),
+  schema: z.object({
+    title: z.string(),
+    published: z.date(),
+    draft: z.boolean().optional(),
+    description: z.string().optional(),
+    cover: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    category: z.string().optional(),
+    author: z.string().optional(),
+    sourceLink: z.string().optional(),
+    licenseName: z.string().optional(),
+    licenseUrl: z.string().optional(),
+  }),
+});
+
 const specs = defineCollection({
   loader: glob({
     pattern: "**/*.md",
@@ -28,4 +48,4 @@ const specs = defineCollection({
   }),
 });
 
-export const collections = { posts, specs };
+export const collections = { posts, specs, publications };

@@ -6,7 +6,6 @@ tags: [Markdown, Blogging]
 category: Examples
 licenseName: "Unlicensed"
 author: emn178
-image: "https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp"
 sourceLink: "https://github.com/emn178/markdown"
 draft: false
 ---

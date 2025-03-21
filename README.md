@@ -16,3 +16,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+
+La página web la cree usando Astro, junto a una plantilla de Astro conocida como yukina.

@@ -7,7 +7,7 @@ import { GetArchives } from "../utils/content";
 const archiveMap = await GetArchives();
 ---
 
-<PostArchiveLayout
+<PostArchiveLayout pageTitle="Biblioteca" pageDescription="Biblioteca de post y publicaciones"
   archiveMap={archiveMap}
   title={i18n(I18nKeys.pages_archive_archive)}
 />
