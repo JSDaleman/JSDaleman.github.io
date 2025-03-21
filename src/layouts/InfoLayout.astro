@@ -1,0 +1,59 @@
+---
+import Base from "./BaseLayout.astro";
+import NavBar from "../components/NavBar.astro";
+import Banner from "../components/Banner.astro";
+
+import YukinaConfig from "../../yukina.config";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+  pageTitle?: string;
+  pageDescription?: string;
+  title?: string;
+  subTitle?: string;
+  bannerImage?: string;
+  slug?: string;
+}
+
+const props = Astro.props;
+---
+
+<Base title={props.pageTitle} description={props.pageDescription}>
+  <NavBar />
+
+  {
+    YukinaConfig.bannerStyle == "LOOP" && (
+      <Banner
+        title={props.title}
+        subTitle={props.subTitle}
+        bannerImage={props.bannerImage}
+        slug={props.slug}
+      />
+    )
+  }
+
+  <div class="main-container my-10 flex justify-center items-center">
+    <div class="transition-leaving w-full space-y-4 center flex flex-col items-center">
+      <main class="content onload-animation">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </div>
+
+</Base>
+
+<style>
+  .main-container {
+    @apply w-full md:min-w-[80%] md:max-w-[80%] lg:min-w-[var(--page-width-lg)] lg:max-w-[var(--page-width-lg)] xl:min-w-[var(--page-width-xl)] xl:max-w-[var(--page-width-xl)];
+    @apply md:mx-auto;
+  }
+
+  .side-bar {
+    @apply hidden min-w-[248px] xl:block;
+  }
+
+  .content {
+    @apply xl:w-[calc(var(--page-width-xl)-264px)];
+  }
+</style>
