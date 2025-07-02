@@ -43,7 +43,7 @@ const YukinaConfig: Configuration = {
 
   username: "JSDaleman",
   sign: "Mechatronics engineer student.",
-  avatarUrl: "https://media.licdn.com/dms/image/v2/D4E03AQGsT08qXW2tPQ/profile-displayphoto-shrink_800_800/B4EZVdcAzAG0Ag-/0/1741029380088?e=1746662400&v=beta&t=un6gaqOkc3FTsxZJ-xILmXJ-4kM5XhuzQeOGR3cfGCE",
+  avatarUrl: "https://imgur.com/M960LJi.png",
   socialLinks: [ // Add icons https://icones.js.org/  or https://icon-sets.iconify.design/
     {
       icon: "line-md:github-loop",
